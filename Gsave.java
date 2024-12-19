@@ -1,8 +1,8 @@
-public class Gsave implements BankAccountDecorator {
+public class GSave implements BankAccountDecorator {
     private BankAccount bankAccount;
 
 
-    public Gsave(SavingsAccount savingsAccount){
+    public GSave(SavingsAccount savingsAccount){
         this.bankAccount = savingsAccount;
     }
     public void setBankAccount(BankAccount bankAccount){
