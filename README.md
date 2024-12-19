@@ -17,6 +17,48 @@ Develop a decorator pattern approach that will implement the given UML diagram:
 
 ![image](https://github.com/user-attachments/assets/d977a2b6-6401-49e3-baf4-24c76c1f1e54)
 
+The content of your Cimb.java should ONLY contain the following codes with the exception of inserting your own package name :
+
+
+
+
+public class Cimb {
+
+	public static void main(String[] args) {
+		
+		SavingsAccount account = new SavingsAccount();
+		
+		account.setAccountNumber(1234);
+		account.setAccountName("Juan Dela Cruz");
+		account.setBalance(10000.0);
+		
+		System.out.println(account.showInfo());
+		System.out.println("Account type: " + account.showAccountType());
+		System.out.println("Interest rate: " + account.getInterestRate());
+		System.out.println("New balance: " + account.computeBalanceWithInterest());
+		System.out.println("Benefits: " + account.showBenefits());
+		
+		System.out.println("----------------------");
+		
+		GSave gSave = new GSave(account);
+		System.out.println(gSave.showInfo());
+		System.out.println("Account type: " + gSave.showAccountType());
+		System.out.println("Interest rate: " + gSave.getInterestRate());
+		System.out.println("New balance: " + gSave.computeBalanceWithInterest());
+		System.out.println("Benefits: " + gSave.showBenefits());
+		
+		System.out.println("----------------------");
+		
+		UpSave upSave = new UpSave(account);
+		System.out.println(upSave.showInfo());
+		System.out.println("Account type: " + upSave.showAccountType());
+		System.out.println("Interest rate: " + upSave.getInterestRate());
+		System.out.println("New balance: " + upSave.computeBalanceWithInterest());
+		System.out.println("Benefits: " + upSave.showBenefits());
+	}
+}
+
+
 Description of the following methods
 
 showAccountType() - Either returns "Savings Account", "GSave" or "UpSave"
