@@ -58,6 +58,10 @@ public class Cimb {
 	}
 }
 
+You should display the following output:
+
+![image](https://github.com/user-attachments/assets/2a8144e5-7601-46c8-8090-db3a7ebfd18f)
+
 
 Description of the following methods
 
