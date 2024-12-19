@@ -16,7 +16,7 @@ public class Cimb {
 
         System.out.println("----------------------");
 
-        Gsave gSave = new Gsave(account);
+        GSave gSave = new GSave(account);
         System.out.println(gSave.showInfo());
         System.out.println("Account type: " + gSave.showAccountType());
         System.out.println("Interest rate: " + gSave.getInterestRate());
